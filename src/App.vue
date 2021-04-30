@@ -3,6 +3,7 @@
     <transition name="fade">
         <router-view/>
     </transition>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
 </template>
 
 <script>
