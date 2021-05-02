@@ -1,8 +1,10 @@
 <template>
     <Navbar/>
-    <transition name="fade">
-        <router-view/>
-    </transition>
+    <router-view v-slot="{ Component }">
+        <transition name="fade">
+            <component :is="Component"></component>
+        </transition>
+    </router-view>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
 </template>
 
@@ -23,10 +25,6 @@ export default {
     padding: 0;
     color: #c6c6c6;
     border-radius: 3px;
-}
-
-*:focus {
-    box-shadow: 0 0 0 3px #00b7ff;
 }
 
 body {
