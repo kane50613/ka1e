@@ -27,7 +27,8 @@ export default {
     border-radius: 3px;
 }
 
-body {
+html, body {
+    height: 95%;
     background-color: #212121;
 }
 
@@ -37,6 +38,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
+    height: 100%;
 }
 
 .fade-enter-active,

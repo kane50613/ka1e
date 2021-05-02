@@ -67,6 +67,7 @@ export default {
         display: none;
         height: 100%;
         z-index: 10;
+        margin-top: 5px;
     }
 
     .menuButton .menubtn {
