@@ -1,6 +1,6 @@
 <template>
     <div class="MainContainer">
-        <strong class="title"><span class="coding">Coding</span> is <span class="everything">Everything</span></strong>
+        <strong class="title"><span class="coding">Coding</span> is<br><span class="everything">Everything</span></strong>
     </div>
 </template>
 
@@ -15,10 +15,11 @@ export default {
         height: 80%;
         display: flex;
         align-items: center;
+        justify-content: center;
     }
 
     .title {
-        font-size: 1000%;
+        font-size: 12vw;
     }
 
     .title .coding {
