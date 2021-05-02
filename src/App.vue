@@ -17,6 +17,10 @@ export default {
 
 <style>
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 * {
     /*outline: #00b7ff solid 3px;*/
     outline: none;
@@ -25,6 +29,7 @@ export default {
     padding: 0;
     color: #c6c6c6;
     border-radius: 3px;
+    -ms-overflow-style: none;
 }
 
 html, body {

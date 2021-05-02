@@ -20,6 +20,13 @@ export default {
 
     .title {
         font-size: 12vw;
+        transition: .5s;
+        user-select: none;
+    }
+
+    .title:hover {
+        font-size: calc(12vw + 2rem);
+        transition: .5s;
     }
 
     .title .coding {

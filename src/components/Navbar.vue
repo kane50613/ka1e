@@ -5,7 +5,7 @@
             <span class="title">Kane</span>
         </router-link>
         <div class="right">
-            <router-link class="route" v-for="n in ['Home,/', 'About me,/about', 'Contact,/contact']" :to="n.split(',')[1]">{{ n.split(',')[0] }}</router-link>
+            <router-link class="route" v-for="n in ['Home,/', 'About me,/about', 'Projects,/projects', 'Contact,/contact']" :to="n.split(',')[1]">{{ n.split(',')[0] }}</router-link>
             <div class="menuButton" @click="menuOpen=!menuOpen">
                 <div :class="`${menuOpen?'active ':''}menubtn one`"></div>
                 <div :class="`${menuOpen?'active ':''}menubtn two`"></div>
@@ -31,7 +31,7 @@ export default {
         display: grid;
         text-align: left;
         align-items: center;
-        grid-template-columns: 3fr 5fr;
+        grid-template-columns: 2fr 5fr;
     }
 
     .brand {
@@ -42,15 +42,15 @@ export default {
     }
 
     .avatar {
+        width: 3rem;
+        height: 3rem;
         border-radius: 50%;
-        width: 4rem;
-        height: 4rem;
     }
 
     .title {
-        margin: 0 10%;
+        margin: 0 8%;
         font-weight: bold;
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .right {
@@ -86,16 +86,7 @@ export default {
         transform: rotateZ(-45deg) translate(5px, -5px);
     }
     
-    @media (max-width: 750px) {
-        .avatar {
-            width: 3rem;
-            height: 3rem;
-        }
-
-        .title {
-            font-size: 2rem;
-        }
-
+    @media (max-width: 800px) {
         .route {
             display: none;
         }
