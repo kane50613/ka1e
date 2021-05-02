@@ -25,8 +25,7 @@ export default {
     }
 
     .title:hover {
-        font-size: calc(12vw + 2rem);
-        transition: .5s;
+        font-size: calc(12vw + 20px);
     }
 
     .title .coding {
@@ -43,5 +42,15 @@ export default {
         background: linear-gradient(to right, #e65c00, #f9d423);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+    }
+
+    @media (max-height: 500px) {
+        .title {
+            font-size: 25vh;
+        }
+
+        .title:hover {
+            font-size: calc(25vh + 20px);
+        }
     }
 </style>

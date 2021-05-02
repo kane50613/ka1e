@@ -21,7 +21,7 @@ export default {
         return {
             menuOpen: false
         }
-    }
+    },
 }
 </script>
 
@@ -42,15 +42,15 @@ export default {
     }
 
     .avatar {
-        width: 3rem;
-        height: 3rem;
+        width: 4vw;
+        height: 4vw;
         border-radius: 50%;
     }
 
     .title {
-        margin: 0 8%;
+        margin: 0 1.5vw;
         font-weight: bold;
-        font-size: 2rem;
+        font-size: 2vw;
     }
 
     .right {
@@ -61,7 +61,13 @@ export default {
         font-size: 1vw;
         font-weight: 700;
         padding: 1rem 1rem;
-        margin: 0 calc(1vw / 4);
+        margin: 0 .5vw;
+        transition: .5s;
+    }
+
+    .router-link-active {
+        color: #807e7e;
+        transition: .5s;
     }
 
     .menuButton {
@@ -77,6 +83,7 @@ export default {
         margin: 10px;
         padding: 2px 15px;
         transition: .5s;
+        border-radius: 2px;
     }
 
     .menuButton .menubtn.one.active {
@@ -90,6 +97,15 @@ export default {
     @media (max-width: 800px) {
         .route {
             display: none;
+        }
+
+        .title {
+            font-size: 3vw;
+        }
+
+        .avatar {
+            width: 6vw;
+            height: 6vw;
         }
 
         .menuButton {

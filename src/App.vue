@@ -1,8 +1,8 @@
 <template>
-    <Navbar/>
+    <Navbar style="z-index: 999"/>
     <router-view v-slot="{ Component }">
         <transition name="fade">
-            <component :is="Component"></component>
+            <component :is="Component" style="position: absolute; top: 55%; left: 50%; transform: translate(-50%, -50%)"></component>
         </transition>
     </router-view>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
