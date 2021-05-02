@@ -38,7 +38,7 @@ html, body {
 }
 
 #app {
-    margin-top: 2rem;
+    margin-top: 5vh;
     font-family: 'Comfortaa', cursive;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

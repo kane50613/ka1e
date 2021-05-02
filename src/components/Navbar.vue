@@ -58,9 +58,10 @@ export default {
     }
 
     .route {
+        font-size: 1vw;
         font-weight: 700;
         padding: 1rem 1rem;
-        margin: 0 .5rem;
+        margin: 0 calc(1vw / 4);
     }
 
     .menuButton {
