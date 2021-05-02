@@ -42,15 +42,15 @@ export default {
     }
 
     .avatar {
-        width: 4vw;
-        height: 4vw;
+        width: 4rem;
+        height: 4rem;
         border-radius: 50%;
     }
 
     .title {
         margin: 0 1.5vw;
         font-weight: bold;
-        font-size: 2vw;
+        font-size: 2rem;
     }
 
     .right {
@@ -58,7 +58,7 @@ export default {
     }
 
     .route {
-        font-size: 1vw;
+        font-size: 1rem;
         font-weight: 700;
         padding: 1rem 1rem;
         margin: 0 .5vw;
@@ -93,19 +93,20 @@ export default {
     .menuButton .menubtn.two.active {
         transform: rotateZ(-45deg) translate(5px, -5px);
     }
-    
+
     @media (max-width: 800px) {
         .route {
             display: none;
         }
 
         .title {
-            font-size: 3vw;
+            font-size: 1.5rem;
+            margin: 0 1.5rem;
         }
 
         .avatar {
-            width: 6vw;
-            height: 6vw;
+            width: 3rem;
+            height: 3rem;
         }
 
         .menuButton {
