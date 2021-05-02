@@ -5,7 +5,7 @@
             <span class="title">Kane</span>
         </router-link>
         <div class="right">
-            <router-link class="route" v-for="n in ['Home,/', 'About me,/about', 'Projects,/projects', 'Contact,/contact']" :to="n.split(',')[1]">{{ n.split(',')[0] }}</router-link>
+            <router-link class="route" v-for="n in ['Home,/', 'About me,/about', 'Projects,/projects']" :to="n.split(',')[1]">{{ n.split(',')[0] }}</router-link>
             <div class="menuButton" @click="menuOpen=!menuOpen">
                 <div :class="`${menuOpen?'active ':''}menubtn one`"></div>
                 <div :class="`${menuOpen?'active ':''}menubtn two`"></div>

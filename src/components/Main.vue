@@ -38,10 +38,10 @@ export default {
 
     .title .everything {
         background: #e65c00;
-        background: -webkit-linear-gradient(to right, #e65c00, #f9d423);
-        background: linear-gradient(to right, #e65c00, #f9d423);
-        -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        background: -webkit-linear-gradient(to right, #fdc830, #f37335);
+        background: linear-gradient(to right, #fdc830, #f37335);
     }
 
     @media (max-height: 500px) {

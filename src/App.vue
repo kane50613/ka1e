@@ -2,7 +2,7 @@
     <Navbar style="z-index: 999"/>
     <router-view v-slot="{ Component }">
         <transition name="fade">
-            <component :is="Component" style="position: absolute; top: 55%; left: 50%; transform: translate(-50%, -50%)"></component>
+            <component :is="Component" style="position: absolute; text-align: center; top: 15vh; width: 100vw"></component>
         </transition>
     </router-view>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
