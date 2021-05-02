@@ -39,7 +39,7 @@ html, body {
 
 #app {
     margin-top: 5vh;
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Comfortaa', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
@@ -60,5 +60,4 @@ html, body {
 .fade-leave-from {
     opacity: 1;
 }
-
 </style>

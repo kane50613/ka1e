@@ -1,10 +1,5 @@
 <template>
     <div class="AboutContainer">
-        <div class="left">
-            <span>$(whoami)</span>
-        </div>
-        <div class="right">
-        </div>
     </div>
 </template>
 
@@ -15,12 +10,5 @@ export default {
 </script>
 
 <style scoped>
-    .AboutContainer {
-        display: grid;
-        grid-template-columns: 5fr 4fr;
-    }
 
-    .left {
-
-    }
 </style>
