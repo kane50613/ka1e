@@ -4,6 +4,7 @@
             <img class="avatar" src="https://github.com/Gary50613.png?size=128">
             <span class="title">Kane</span>
         </router-link>
+        <router-link class="route" v-for="n in ['Home,/', 'About me,/about', 'Contact,/contact']" :to="n.split(',')[1]">{{ n.split(',')[0] }}</router-link>
     </div>
 </template>
 
