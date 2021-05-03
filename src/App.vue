@@ -2,7 +2,7 @@
     <Navbar style="z-index: 999"/>
     <router-view v-slot="{ Component }">
         <transition name="fade">
-            <component :is="Component" style="position: absolute; text-align: center; top: 15vh; width: 100vw"></component>
+            <component :is="Component" class="comp"></component>
         </transition>
     </router-view>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
@@ -35,6 +35,15 @@ export default {
 html, body {
     height: 95%;
     background-color: #212121;
+}
+
+.comp {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100vw - 15rem);
 }
 
 #app {

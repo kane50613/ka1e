@@ -12,7 +12,8 @@ export default {
 
 <style scoped>
     .MainContainer {
-        height: 80%;
+        margin-top: 2rem;
+        height: fit-content;
         display: flex;
         align-items: center;
         justify-content: center;
