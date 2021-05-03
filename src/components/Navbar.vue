@@ -11,6 +11,9 @@
                 <div :class="`${menuOpen?'active ':''}menubtn two`"></div>
             </div>
         </div>
+        <div class="menu" :class="menuOpen?'active':''">
+
+        </div>
     </div>
 </template>
 
@@ -71,9 +74,10 @@ export default {
     }
 
     .menuButton {
+        position: relative;
+        z-index: 100;
         display: none;
         height: 100%;
-        z-index: 10;
         margin-top: 5px;
     }
 
@@ -92,6 +96,26 @@ export default {
 
     .menuButton .menubtn.two.active {
         transform: rotateZ(-45deg) translate(5px, -5px);
+    }
+
+    .menu {
+        visibility: hidden;
+        transition: 1s;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        margin-top: 0;
+        background-color: rgba(255,255,255,0);
+        display: block;
+        z-index: -1;
+    }
+
+    .menu.active {
+        z-index: 9;
+        visibility: visible;
+        background-color: rgba(255, 255, 255, 0.8);
     }
 
     @media (max-width: 800px) {
