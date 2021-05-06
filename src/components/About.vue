@@ -1,5 +1,5 @@
 <template>
-    <div class="AboutContainer">
+    <div class="AboutContainer shadow">
         <div class="left container">
             <span class="title">$(whoami)</span>
             <span class="content">
@@ -9,8 +9,8 @@
         <div class="hr"></div>
         <div class="right container">
             <span class="title">Contact</span>
-            <div class="btn discord"><img src="@/assets/discord.svg"/>凱恩Kane#5384</div>
-            <div class="btn email"><img src="@/assets/email.svg"/>contact@ka1e.co</div>
+            <div class="btn discord shadow" @click="copyToClipboard('凱恩Kane#5384')"><img src="@/assets/discord.svg"/>凱恩Kane#5384</div>
+            <div class="btn email shadow" @click="copyToClipboard('contact@ka1e.co')"><img src="@/assets/email.svg"/>contact@ka1e.co</div>
         </div>
     </div>
 </template>
@@ -20,7 +20,24 @@ export default {
     name: "About",
     methods: {
         copyToClipboard(text) {
-            let dom = document.createComment('input')
+            if (window.clipboardData && window.clipboardData.setData)
+                return window.clipboardData.setData("Text", text)
+            if (document.queryCommandSupported && document.queryCommandSupported("copy")) {
+                var textarea = document.createElement("textarea");
+                textarea.textContent = text;
+                textarea.style.position = "fixed";
+                document.body.appendChild(textarea);
+                textarea.select();
+                try {
+                    return document.execCommand("copy");
+                }
+                catch (ex) {
+                    return false;
+                }
+                finally {
+                    document.body.removeChild(textarea);
+                }
+            }
         }
     }
 }
@@ -69,11 +86,16 @@ export default {
         font-weight: bold;
         transition: .5s;
         white-space: nowrap;
-        box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
     }
 
-    .btn:hover {
-        box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.3);
+    .btn:hover::after {
+        content: '點擊複製到剪貼簿';
+        transform: translate(0, -3rem);
+        background-color: #1c1c1c;
+        border-radius: 5px;
+        padding: .5rem 1.5rem;
+        position: absolute;
+        color: white;
     }
 
     .btn > img {
