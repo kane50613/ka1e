@@ -10,7 +10,7 @@
         <div class="right container">
             <span class="title">Contact</span>
             <div class="btn discord"><img src="@/assets/discord.svg"/>凱恩Kane#5384</div>
-            <div class="btn email"><img src="@/assets/email.png"/>contact@ka1e.co</div>
+            <div class="btn email"><img src="@/assets/email.svg"/>contact@ka1e.co</div>
         </div>
     </div>
 </template>
