@@ -101,6 +101,7 @@ export default {
             display: block;
             padding: 2rem;
             margin: 0;
+            width: 70%;
             margin-top: 2rem;
         }
 
