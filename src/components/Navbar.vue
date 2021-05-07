@@ -115,25 +115,7 @@ export default {
     }
 
     .menu {
-        visibility: hidden;
-        transition: 1s;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        margin-top: 0;
-        background-color: rgba(255,255,255,0);
-        z-index: -1;
-        display: block;
-        text-align: center;
-        padding-top: 50%;
-    }
-
-    .menu.active {
-        z-index: 9;
-        visibility: visible;
-        background-color: rgba(255, 255, 255, 0.8);
+        display: none;
     }
 
     @media (max-width: 800px) {
@@ -153,6 +135,28 @@ export default {
 
         .menuButton {
             display: inline-block;
+        }
+
+        .menu {
+            visibility: hidden;
+            transition: 1s;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            margin-top: 0;
+            background-color: rgba(255,255,255,0);
+            z-index: -1;
+            display: block;
+            text-align: center;
+            padding-top: 50%;
+        }
+
+        .menu.active {
+            z-index: 9;
+            visibility: visible;
+            background-color: rgba(255, 255, 255, 0.8);
         }
     }
 </style>
