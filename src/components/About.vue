@@ -88,14 +88,23 @@ export default {
         white-space: nowrap;
     }
 
-    .btn:hover::after {
+    .btn::after {
         content: '點擊複製到剪貼簿';
-        transform: translate(0, -3rem);
         background-color: #1c1c1c;
         border-radius: 5px;
         padding: .5rem 1.5rem;
         position: absolute;
         color: white;
+        z-index: -9;
+        opacity: 0;
+        transition: .5s;
+        transform: translate(0, -1rem);
+    }
+
+    .btn:hover::after {
+        transform: translate(0, -3rem);
+        z-index: 10;
+        opacity: 1;
     }
 
     .btn > img {

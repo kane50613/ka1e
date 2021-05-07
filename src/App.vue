@@ -11,7 +11,9 @@
 <script>
 import Navbar from "@/components/Navbar";
 export default {
-    components: {Navbar}
+    components: {
+        Navbar
+    },
 }
 </script>
 
@@ -56,26 +58,29 @@ html, body {
 }
 
 .shadow {
-    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
     transition: box-shadow .5s;
 }
 
 .shadow:hover {
-    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
 }
 
 .fade-enter-active,
 .fade-leave-active {
-    transition: opacity .5s;
+    transition: transform 1.5s cubic-bezier(.37,.11,.4,1);
 }
 
-.fade-enter-from,
+.fade-enter-from {
+    transform: translate(-50%, 100vh);
+}
+
+.fade-leave-from,
+.fade-enter-to {
+    transform: translate(-50%, -50%);
+}
+
 .fade-leave-to {
-    opacity: 0;
-}
-
-.fade-enter-to,
-.fade-leave-from {
-    opacity: 1;
+    transform: translate(-50%, -100vh);
 }
 </style>

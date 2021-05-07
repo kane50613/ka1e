@@ -70,23 +70,22 @@ export default {
 
     .route.inMenu {
         display: block;
-        color: #212121;
         z-index: -1;
         opacity: 0;
     }
 
     .route.inMenu.active {
+        color: #212121;
         z-index: 9;
         opacity: 1;
     }
 
     .router-link-active {
         color: #807e7e;
-        transition: .5s;
     }
 
-    .router-link-active.isMenu {
-        color: #636363;
+    .route.inMenu.router-link-active {
+        color: #4c4c4c;
     }
 
     .menuButton {
@@ -139,7 +138,7 @@ export default {
 
         .menu {
             visibility: hidden;
-            transition: 1s;
+            transition: .5s;
             position: fixed;
             top: 0;
             left: 0;
@@ -156,7 +155,7 @@ export default {
         .menu.active {
             z-index: 9;
             visibility: visible;
-            background-color: rgba(255, 255, 255, 0.8);
+            background-color: rgba(255, 255, 255, 0.9);
         }
     }
 </style>
