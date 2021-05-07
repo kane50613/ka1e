@@ -68,7 +68,7 @@ html, body {
 
 .fade-enter-active,
 .fade-leave-active {
-    transition: transform 1.5s cubic-bezier(.37,.11,.4,1);
+    transition: transform 2s cubic-bezier(.37,.11,.4,1);
 }
 
 .fade-enter-from {
@@ -81,6 +81,6 @@ html, body {
 }
 
 .fade-leave-to {
-    transform: translate(-50%, -100vh);
+    transform: translate(-50%, -200vh);
 }
 </style>
