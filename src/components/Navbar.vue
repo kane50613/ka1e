@@ -11,8 +11,8 @@
                 <div :class="`${menuOpen?'active ':''}menubtn two`"></div>
             </div>
         </div>
-        <div class="menu" :class="menuOpen?'active':''">
-
+        <div class="menu" :class="menuOpen?'active':''" @click="menuOpen=false">
+            <router-link class="route inMenu" :class="menuOpen?'active':''" v-for="n in ['Home,/', 'About me,/about', 'Projects,/projects']" :to="n.split(',')[1]">{{ n.split(',')[0] }}</router-link>
         </div>
     </div>
 </template>
@@ -68,9 +68,25 @@ export default {
         transition: .5s;
     }
 
+    .route.inMenu {
+        display: block;
+        color: #212121;
+        z-index: -1;
+        opacity: 0;
+    }
+
+    .route.inMenu.active {
+        z-index: 9;
+        opacity: 1;
+    }
+
     .router-link-active {
         color: #807e7e;
         transition: .5s;
+    }
+
+    .router-link-active.isMenu {
+        color: #636363;
     }
 
     .menuButton {
@@ -108,8 +124,10 @@ export default {
         height: 100%;
         margin-top: 0;
         background-color: rgba(255,255,255,0);
-        display: block;
         z-index: -1;
+        display: block;
+        text-align: center;
+        padding-top: 50%;
     }
 
     .menu.active {
