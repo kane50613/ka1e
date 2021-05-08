@@ -81,12 +81,14 @@ export default {
         display: block;
         z-index: -1;
         opacity: 0;
+        pointer-events: none;
     }
 
     .route.inMenu.active {
         color: #212121;
         z-index: 9;
         opacity: 1;
+        pointer-events: auto;
     }
 
     .router-link-active {

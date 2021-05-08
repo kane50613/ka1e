@@ -12,7 +12,8 @@ export default {
 
 <style scoped>
     .MainContainer {
-        top: 10%;
+        position: absolute;
+        top: calc(10% + 8rem);
         display: flex;
         justify-content: center;
     }
@@ -45,7 +46,7 @@ export default {
 
     @media (max-width: 600px) {
         .MainContainer {
-            top: 25%;
+            top: calc(25% + 8rem);
         }
     }
 

@@ -88,7 +88,6 @@ export default {
         display: inline-flex;
         justify-content: center;
         align-items: center;
-        cursor: pointer;
         margin: 0 1rem 1rem 1rem;
         padding: .7rem 1.5rem;
         width: fit-content;
