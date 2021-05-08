@@ -37,6 +37,11 @@ export default {
 html, body {
     height: 95%;
     background-color: #212121;
+    overflow: hidden;
+}
+
+.no-overflow {
+    overflow: hidden;
 }
 
 .comp {
@@ -46,6 +51,7 @@ html, body {
     left: 50%;
     transform: translate(-50%, -50%);
     width: calc(100vw - 15rem);
+    overflow-y: scroll;
 }
 
 #app {

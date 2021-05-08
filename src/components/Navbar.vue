@@ -2,7 +2,7 @@
     <div class="nav">
         <router-link to="/" class="brand">
             <img class="avatar" src="https://github.com/Gary50613.png?size=128">
-            <span class="title">Kane</span>
+            <span class="title" :class="menuOpen? 'black': ''">Kane</span>
         </router-link>
         <div class="right">
             <router-link class="route" v-for="n in ['Home,/', 'About me,/about', 'Projects,/projects']" :to="n.split(',')[1]">{{ n.split(',')[0] }}</router-link>
@@ -38,6 +38,7 @@ export default {
     }
 
     .brand {
+        z-index: 11;
         cursor: pointer;
         display: flex;
         text-align: left;
@@ -54,6 +55,11 @@ export default {
         margin: 0 1.5vw;
         font-weight: bold;
         font-size: 2rem;
+        transition: .5s;
+    }
+
+    .title.black {
+        color: #212121;
     }
 
     .right {
