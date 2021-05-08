@@ -44,6 +44,7 @@ body {
     text-align: center;
     width: 100vw;
     overflow-y: scroll;
+    transition: transform 2s cubic-bezier(.37,.11,.4,1);
 }
 
 #app {
@@ -62,11 +63,6 @@ body {
 
 .shadow:hover {
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
-}
-
-.fade-enter-active,
-.fade-leave-active {
-    transition: transform 2s cubic-bezier(.37,.11,.4,1);
 }
 
 .fade-leave-active {

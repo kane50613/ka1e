@@ -11,8 +11,10 @@
                 <div :class="`${menuOpen?'active ':''}menubtn two`"></div>
             </div>
         </div>
-        <div class="menu" :class="menuOpen?'active':''" @click="menuOpen=false">
-            <router-link class="route inMenu" :class="menuOpen?'active':''" v-for="n in ['Home,/', 'About me,/about', 'Projects,/projects']" :to="n.split(',')[1]">{{ n.split(',')[0] }}</router-link>
+        <div class="menuBox" :class="menuOpen?'active':''" @click="menuOpen=false">
+            <div class="menu">
+                <router-link class="route inMenu" :class="menuOpen?'active':''" v-for="n in ['Home,/', 'About me,/about', 'Projects,/projects']" :to="n.split(',')[1]">{{ n.split(',')[0] }}</router-link>
+            </div>
         </div>
     </div>
 </template>
@@ -60,7 +62,7 @@ export default {
     }
 
     .title.black {
-        color: #212121;
+        color: #383838;
     }
 
     .right {
@@ -120,7 +122,7 @@ export default {
         transform: rotateZ(-45deg) translate(5px, -5px);
     }
 
-    .menu {
+    .menuBox {
         display: none;
     }
 
@@ -143,7 +145,7 @@ export default {
             display: inline-block;
         }
 
-        .menu {
+        .menuBox {
             visibility: hidden;
             transition: .5s;
             position: fixed;
@@ -154,12 +156,13 @@ export default {
             margin-top: 0;
             background-color: rgba(255,255,255,0);
             z-index: -1;
-            display: block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             text-align: center;
-            padding-top: 50%;
         }
 
-        .menu.active {
+        .menuBox.active {
             z-index: 9;
             visibility: visible;
             background-color: rgba(255, 255, 255, 0.9);

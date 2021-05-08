@@ -12,9 +12,9 @@ export default {
 
 <style scoped>
     .MainContainer {
+        top: 10%;
         display: flex;
         justify-content: center;
-        padding-top: 5%;
     }
 
     .title {
@@ -41,6 +41,12 @@ export default {
         background: linear-gradient(to right, #fdc830, #f37335);
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
+    }
+
+    @media (max-width: 600px) {
+        .MainContainer {
+            top: 25%;
+        }
     }
 
     @media (max-height: 500px) {
