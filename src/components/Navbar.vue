@@ -30,6 +30,7 @@ export default {
 
 <style scoped>
     .nav {
+        position: sticky;
         padding: 1rem 10%;
         display: grid;
         text-align: left;

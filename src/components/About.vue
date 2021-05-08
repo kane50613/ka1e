@@ -1,16 +1,18 @@
 <template>
-    <div class="AboutContainer shadow">
-        <div class="left container">
-            <span class="title">$(whoami)</span>
-            <span class="content">
+    <div class="AboutContainer">
+        <div class="BoxContainer shadow">
+            <div class="left container">
+                <span class="title">$(whoami)</span>
+                <span class="content">
                 Hi, My name is Kane, 2 years ago, I joined Discord and started my coding journry!
             </span>
-        </div>
-        <div class="hr"></div>
-        <div class="right container">
-            <span class="title">Contact</span>
-            <div class="btn discord shadow" @click="copyToClipboard('凱恩Kane#5384')"><img src="@/assets/discord.svg"/>凱恩Kane#5384</div>
-            <div class="btn email shadow" @click="copyToClipboard('contact@ka1e.co')"><img src="@/assets/email.svg"/>contact@ka1e.co</div>
+            </div>
+            <div class="hr"></div>
+            <div class="right container">
+                <span class="title">Contact</span>
+                <div class="btn discord shadow" @click="copyToClipboard('凱恩Kane#5384')"><img src="@/assets/discord.svg"/>凱恩Kane#5384</div>
+                <div class="btn email shadow" @click="copyToClipboard('contact@ka1e.co')"><img src="@/assets/email.svg"/>contact@ka1e.co</div>
+            </div>
         </div>
     </div>
 </template>
@@ -45,11 +47,19 @@ export default {
 
 <style scoped>
     .AboutContainer {
+        display: flex;
+        align-items: center;
+        height: 75%;
+        justify-content: center;
+    }
+
+    .BoxContainer {
         display: grid;
         grid-template-columns: 1fr 1px 1fr;
         background-color: rgba(255, 255, 255, 0.9);
         border-radius: 5px;
         padding: 2rem 0;
+        width: 90%;
     }
 
     span {
@@ -128,12 +138,10 @@ export default {
     }
 
     @media (max-width: 800px) {
-        .AboutContainer {
+        .BoxContainer {
             display: block;
             padding: 2rem;
-            margin: 0;
-            width: 70%;
-            margin-top: 2rem;
+            margin: 2rem;
         }
 
         .container {

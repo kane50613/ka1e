@@ -12,11 +12,9 @@ export default {
 
 <style scoped>
     .MainContainer {
-        margin-top: 2rem;
-        height: fit-content;
         display: flex;
-        align-items: center;
         justify-content: center;
+        padding-top: 5%;
     }
 
     .title {

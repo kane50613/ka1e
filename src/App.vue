@@ -34,33 +34,25 @@ export default {
     -ms-overflow-style: none;
 }
 
-html, body {
-    height: 95%;
+body {
     background-color: #212121;
-    overflow: hidden;
-}
-
-.no-overflow {
-    overflow: hidden;
+    height: 100vh;
 }
 
 .comp {
-    position: absolute;
+    position: relative;
     text-align: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: calc(100vw - 15rem);
+    width: 100vw;
     overflow-y: scroll;
 }
 
 #app {
-    margin-top: 5vh;
+    padding-top: 5vh;
     font-family: 'Comfortaa', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
-    height: 100%;
+    height: calc(100% - 5vh);
 }
 
 .shadow {
@@ -77,16 +69,21 @@ html, body {
     transition: transform 2s cubic-bezier(.37,.11,.4,1);
 }
 
+.fade-leave-active {
+    position: absolute;
+}
+
 .fade-enter-from {
-    transform: translate(-50%, 100vh);
+    transform: translateY(100vh);
 }
 
 .fade-leave-from,
 .fade-enter-to {
-    transform: translate(-50%, -50%);
+    transform: none;
 }
 
 .fade-leave-to {
-    transform: translate(-50%, -200vh);
+    /*transform: translate(0, -200vh);*/
+    transform: translateY(-100vh);
 }
 </style>
