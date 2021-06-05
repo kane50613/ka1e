@@ -10,8 +10,9 @@
             <div class="hr"></div>
             <div class="right container">
                 <span class="title">Contact</span>
-                <div class="btn discord shadow" @click="copyToClipboard('凱恩Kane#5384')"><img src="@/assets/discord.svg"/>凱恩Kane#5384</div>
-                <div class="btn email shadow" @click="copyToClipboard('contact@ka1e.co')"><img src="@/assets/email.svg"/>contact@ka1e.co</div>
+                <div class="btn discord shadow copy" @click="copyToClipboard('凱恩Kane#5384')"><img src="@/assets/discord.svg"/>凱恩Kane#5384</div>
+                <div class="btn email shadow copy" @click="copyToClipboard('contact@ka1e.co')"><img src="@/assets/email.svg"/>contact@ka1e.co</div>
+                <a href="https://github.com/Gary50613" class="btn github shadow"><img src="@/assets/github.svg"/>Gary50613</a>
             </div>
         </div>
     </div>
@@ -97,8 +98,8 @@ export default {
         white-space: nowrap;
     }
 
-    .btn::after {
-        content: '點擊複製到剪貼簿';
+    .btn.copy::after {
+        content: 'Copy to clipboard';
         background-color: #1c1c1c;
         border-radius: 5px;
         padding: .5rem 1.5rem;
@@ -134,6 +135,10 @@ export default {
     }
     .btn.discord:hover {
         background-color: #56659e;
+    }
+    .btn.github {
+      background: black;
+      color: white;
     }
 
     @media (max-width: 800px) {
