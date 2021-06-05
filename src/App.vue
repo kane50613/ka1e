@@ -31,6 +31,7 @@ export default {
     padding: 0;
     color: #c6c6c6;
     border-radius: 3px;
+    -webkit-font-smoothing: subpixel-antialiased;
     -ms-overflow-style: none;
 }
 

@@ -96,6 +96,7 @@ export default {
         font-weight: bold;
         transition: .5s;
         white-space: nowrap;
+        letter-spacing: .1rem;
     }
 
     .btn.copy::after {
