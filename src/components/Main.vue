@@ -13,7 +13,7 @@ export default {
 <style scoped>
     .MainContainer {
         position: absolute;
-        top: calc(10% + 8rem);
+        top: calc(10% + 12rem);
         display: flex;
         justify-content: center;
     }
