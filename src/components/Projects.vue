@@ -60,7 +60,7 @@ export default {
         margin: 2rem auto;
         padding: 2rem;
         transition: .5s;
-
+        cursor: pointer;
     }
     .repoContainer:hover {
         background: rgba(255, 255, 255, 0.2);
