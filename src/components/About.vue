@@ -4,7 +4,7 @@
             <div class="left container">
                 <span class="title">$(whoami)</span>
                 <span class="content">
-                Hi, My name is Kane, 2 years ago, I joined Discord and started my coding journry!
+                Hi, My name is Kane, 2 years ago, I joined Discord and started my coding journey!
             </span>
             </div>
             <div class="hr"></div>
@@ -59,7 +59,7 @@ export default {
         grid-template-columns: 1fr 1px 1fr;
         background-color: rgba(255, 255, 255, 0.9);
         border-radius: 5px;
-        padding: 2rem 0;
+        padding: 2rem 1rem;
         width: 90%;
     }
 
@@ -146,7 +146,7 @@ export default {
         .BoxContainer {
             display: block;
             padding: 2rem;
-            margin: 2rem;
+            margin: 0 2rem;
         }
 
         .container {
@@ -156,7 +156,7 @@ export default {
         .hr {
             width: calc(100% - 4rem);
             border-top: 1px solid #212121;
-            margin: 2rem;
+            margin: 1rem 2rem;
         }
     }
 </style>
