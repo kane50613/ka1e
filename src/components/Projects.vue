@@ -67,33 +67,27 @@ export default {
         background: rgba(255, 255, 255, 0.2);
     }
     .repoName {
-      font-size: 2rem;
-      font-weight: 900;
-    }
-    .hr {
-      background: rgba(255, 255, 255, 0.3);
-      width: 80%;
-      height: 1px;
-      margin: auto;
+        font-size: 2rem;
+        font-weight: 900;
     }
     .infoContainer {
         text-align: left;
     }
     .countContainer {
-      display: flex;
+        display: flex;
     }
     .countIcon {
-      margin-right: .5rem;
-      font-weight: 900;
+        margin-right: .5rem;
+        font-weight: 900;
     }
     .count {
-      margin-right: 1rem;
+        margin-right: 1rem;
     }
     .repoDescription {
-      margin: .5rem 0;
+        margin: .5rem 0;
     }
     .counterContainer {
-      display: flex;
+        display: flex;
     }
 
     @media (max-width: 1000px) {
@@ -108,7 +102,7 @@ export default {
 
     @media (max-width: 800px) {
         .ProjectsContainer {
-            padding: 0 2%;
+            padding: 0;
         }
     }
 </style>
