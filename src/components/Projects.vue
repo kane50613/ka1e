@@ -94,9 +94,10 @@ export default {
         .ProjectsContainer {
             display: block;
             margin: 0 auto;
+            width: calc(100% - 1rem);
         }
         .repoContainer {
-          width: 80%;
+          width: calc(100% - 3.5rem);
         }
     }
 
