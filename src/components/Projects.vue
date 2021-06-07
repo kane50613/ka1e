@@ -97,12 +97,18 @@ export default {
     }
 
     @media (max-width: 1000px) {
-      .ProjectsContainer {
-        display: block;
-        margin: 0 auto;
-      }
-      .repoContainer {
-        width: 80%;
-      }
+        .ProjectsContainer {
+            display: block;
+            margin: 0 auto;
+        }
+        .repoContainer {
+          width: 80%;
+        }
+    }
+
+    @media (max-width: 800px) {
+        .ProjectsContainer {
+            padding: 0 2%;
+        }
     }
 </style>
