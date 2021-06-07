@@ -50,15 +50,16 @@ export default {
     .ProjectsContainer {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        width: 100%;
-        margin-top: 3rem;
+        width: 90%;
+        padding: 0 10%;
+        margin: 3rem auto 0 auto;
     }
     .repoContainer {
         display: block;
-        border-radius: 5px;
-        width: 60%;
-        margin: 2rem auto;
-        padding: 2rem;
+        border-radius: 7px;
+        width: 70%;
+        margin: 1.5rem auto 0 0;
+        padding: 1.5rem;
         transition: .5s;
         cursor: pointer;
     }
@@ -98,6 +99,10 @@ export default {
     @media (max-width: 1000px) {
       .ProjectsContainer {
         display: block;
+        margin: 0 auto;
+      }
+      .repoContainer {
+        width: 80%;
       }
     }
 </style>
