@@ -10,9 +10,9 @@
             <div class="hr"></div>
             <div class="right container">
                 <span class="title">Contact</span>
-                <div class="btn discord shadow copy" @click="copyToClipboard('凱恩Kane#5384')"><img src="@/assets/discord.svg"/>凱恩Kane#5384</div>
-                <div class="btn email shadow copy" @click="copyToClipboard('contact@ka1e.co')"><img src="@/assets/email.svg"/>contact@ka1e.co</div>
-                <a href="https://github.com/Gary50613" class="btn github shadow"><img src="@/assets/github.svg"/>Gary50613</a>
+                <div class="btn discord shadow copy" @click="copyToClipboard('凱恩Kane#5384')"><img src="@/assets/discord.svg" alt="Discord"/>凱恩Kane#5384</div>
+                <div class="btn email shadow copy" @click="copyToClipboard('contact@ka1e.co')"><img src="@/assets/email.svg" alt="Email"/>contact@ka1e.co</div>
+                <a href="https://github.com/Gary50613" class="btn github shadow"><img src="@/assets/github.svg" alt="Github"/>Gary50613</a>
             </div>
         </div>
     </div>

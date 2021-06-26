@@ -1,7 +1,7 @@
 <template>
     <div class="nav">
         <router-link to="/" class="brand">
-            <img class="avatar" src="https://github.com/Gary50613.png?size=128">
+            <img class="avatar" src="https://github.com/Gary50613.png?size=128" alt="凱恩Kane">
             <span class="title" :class="menuOpen? 'black': ''">Kane</span>
         </router-link>
         <div class="right">
