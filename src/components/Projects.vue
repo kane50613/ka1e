@@ -12,7 +12,10 @@
                       <img src="@/assets/github/fork.svg" class="countIcon">
                       <p class="count">{{n.forks_count}}</p>
                   </div>
-                  <p class="language">{{n.language}}</p>
+                  <div v-if="!!n.language" class="counterContainer">
+                    <img src="@/assets/github/code.png" class="countIcon">
+                    <p class="language">{{n.language}}</p>
+                  </div>
               </div>
           </div>
     </div>
